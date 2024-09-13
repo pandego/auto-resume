@@ -92,7 +92,7 @@ auto-resume/
 - Python 3.11
 - LaTeX distribution (for generating PDFs)
 - OpenAI (or compatible) API access
-  - `openai` neededfor the structured output, but easly replaceable with other LLM providers (like Ollama)
+  - `openai-api` neededfor the *OpenAI Structured Output*, but easly replaceable with other LLM providers (like Ollama)
 - `tesseract` for OCR
 
 ## 🚀 Quick Start
@@ -185,5 +185,6 @@ python scripts/generate_pdf.py
 - [X] Add a script to tailor the resume based on the job description.
 - [ ] Add a script to build the LaTeX files.
 - [ ] Add a script to generate the PDFs.
+- [ ] Language: Add support for other languages like French, Spanish, etc.
 - [ ] Simplify Prompt Engineering / Structured Output
 - [ ] Update the `README.md` to reflect the new architecture
