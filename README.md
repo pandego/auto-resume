@@ -98,20 +98,51 @@ auto-resume/
   - `pydantic`
   - `os`
   - `subprocess`
+  - `pypdf2`
+  - `poetry`
+  - `tesseract`
 
-To install the required libraries, run:
+## 🚀 Quick Start
 
-```bash
-pip install -r requirements.txt
-```
+Follow these steps to clone the repository, set up the environment, and start using FLUX.1 models:
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/pandego/auto-resume.git
+   cd auto-resume
+   ```
+
+2. **Set Up the Environment:**
+
+   Create the conda environment with all necessary dependencies:
+
+   ```bash
+   conda env create -f environment.yml
+   conda activate auto-resume
+   ```
+
+3. **Install Dependencies:**
+
+   Use Poetry to install additional dependencies:
+
+   ```bash
+   poetry install --no-root
+   ```
+
+4. **Install Tesseract:**
+
+   Install Tesseract OCR on your system:
+
+   - **Windows:** Download and install from [here](https://tesseract-ocr.github.io/tessdoc/Installation.html#windows).
+   - **macOS:** Use Homebrew: `brew install tesseract`, more info [here](https://tesseract-ocr.github.io/tessdoc/Installation.html#macos).
+   - **Linux:** Use your package manager, e.g., `sudo apt install tesseract-ocr`, more info [here](https://tesseract-ocr.github.io/tessdoc/Installation.html#ubuntu).
 
 ## Usage
 
 ### 0. Convert PDF to TXT
 
-Prepare the data in the `data/` directory.  
-
-Run the script to convert the PDF files to TXT files:
+If you have a PDF resume and job description, run the script to convert them to TXT files:
 
 ```bash
 python scripts/parse_pdf.py data/resume.pdf
@@ -150,3 +181,16 @@ Finally, generate the tailored resume and motivation letter in PDF format:
 ```bash
 python scripts/generate_pdf.py
 ```
+
+---
+
+## TODOs
+
+- [X] Add a script to convert the PDF resume and job description to TXT files.
+- [ ] Add a script to process the unstructured resume TXT files into structured JSON format.
+- [X] Add a script to process the unstructured job description TXT files into structured JSON format.
+- [X] Add a script to tailor the resume based on the job description.
+- [ ] Add a script to build the LaTeX files.
+- [ ] Add a script to generate the PDFs.
+- [ ] Simplify Prompt Engineering / Structured Output
+- [ ] Update the `README.md` to reflect the new architecture
