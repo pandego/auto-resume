@@ -92,7 +92,7 @@ auto-resume/
 - Python 3.11
 - LaTeX distribution (for generating PDFs)
 - OpenAI (or compatible) API access
-  - `openai-api` neededfor the *OpenAI Structured Output*, but easly replaceable with other LLM providers (like Ollama)
+  - `openai-api` needed for the *OpenAI Structured Output*, but easly replaceable with other LLM providers (like Ollama)
 - `tesseract` for OCR
 
 ## 🚀 Quick Start
