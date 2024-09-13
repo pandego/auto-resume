@@ -89,18 +89,11 @@ auto-resume/
 
 ## Requirements
 
-- Python 3.x
+- Python 3.11
 - LaTeX distribution (for generating PDFs)
-- OpenAI (or another LLM provider) API access
-- Required Python libraries:
-  - `openai`
-  - `json`
-  - `pydantic`
-  - `os`
-  - `subprocess`
-  - `pypdf2`
-  - `poetry`
-  - `tesseract`
+- OpenAI (or compatible) API access
+  - `openai` neededfor the structured output, but easly replaceable with other LLM providers (like Ollama)
+- `tesseract` for OCR
 
 ## 🚀 Quick Start
 
@@ -166,7 +159,7 @@ Use the LLM to tailor the resume based on the job description:
 python scripts/tailor_resume.py
 ```
 
-### 3. Build the LaTeX
+### 🚧 3. Build the LaTeX (NOT YET IMPLEMENTED) 🚧
 
 Run the script to build the LaTeX files:
 
@@ -174,7 +167,7 @@ Run the script to build the LaTeX files:
 python scripts/build_latex_pdf.py
 ```
 
-### 4. Generate the PDFs
+### 🚧 4. Generate the PDFs (NOT YET IMPLEMENTED) 🚧
 
 Finally, generate the tailored resume and motivation letter in PDF format:
 
