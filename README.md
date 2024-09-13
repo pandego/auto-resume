@@ -183,6 +183,7 @@ python scripts/generate_pdf.py
 - [ ] Add a script to process the unstructured resume TXT files into structured JSON format.
 - [X] Add a script to process the unstructured job description TXT files into structured JSON format.
 - [X] Add a script to tailor the resume based on the job description.
+- [ ] Add a script to generate the motivation letter based on the resume and job description.
 - [ ] Add a script to build the LaTeX files.
 - [ ] Add a script to generate the PDFs.
 - [ ] Language: Add support for other languages like French, Spanish, etc.
