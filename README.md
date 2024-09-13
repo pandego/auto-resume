@@ -1,7 +1,8 @@
 
-# Auto-Resume: Tailored CV & Motivation Letter Generator
+# Auto-Resume 🤖
+## Tailored CV & Motivation Letter Generator
 
-This project automates the process of tailoring a CV and motivation letter for specific job descriptions using large language models (LLMs) and LaTeX for high-quality PDF formatting. The system takes unstructured resume data and job descriptions, structures them using an LLM, and then tailors them into a customized resume and motivation letter in PDF format.
+This project aims to automate the process of tailoring a CV and motivation letter for specific job descriptions using large language models (LLMs) and LaTeX for high-quality PDF formatting. The system takes unstructured resume data and job descriptions, structures them using an LLM, and then tailors them into a customized resume and motivation letter in PDF format.
 
 ## Features
 
